@@ -1,0 +1,13 @@
+.venv
+.env
+db.sqlite3
+__pycache__
+celerybeat-schedule
+
+.idea
+.gkey
+
+logs
+static/*
+assets
+media
