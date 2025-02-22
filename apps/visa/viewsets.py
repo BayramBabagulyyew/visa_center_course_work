@@ -14,12 +14,14 @@ class CountryViewSet(viewsets.ModelViewSet):
 class MediaViewSet(viewsets.ModelViewSet):
     queryset = Media.objects.all()
     serializer_class = MediaSerializer
+    filterset_fields = ['country']
     http_method_names = ['get']
 
 
 class FAQViewSet(viewsets.ModelViewSet):
     queryset = FAQ.objects.all()
     serializer_class = FAQSerializer
+    filterset_fields = ['country']
     http_method_names = ['get']
 
 
@@ -31,6 +33,7 @@ class ContactRequestViewSet(viewsets.ModelViewSet):
 class DocumentViewSet(viewsets.ModelViewSet):
     queryset = Document.objects.all()
     serializer_class = DocumentSerializer
+    filterset_fields = ['country']
     http_method_names = ['get']
 
 
